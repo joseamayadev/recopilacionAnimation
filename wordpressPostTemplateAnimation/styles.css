@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  height: 100vh;
+}
+
+.contenedor {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  width: 16rem;
+  height: 26rem;
+  background-color: black;
+  border-radius: 10px;
+  transform: translateX(-20px);
+  transition: ease 0.2s;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.384);
+  color: orange;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cards:hover {
+  transform: rotateY(0.2deg);
+  transition: ease 0.2s;
+  margin-right: 50px;
+  transform: translateY(-10px);
+  border-bottom: solid 20px;
+  border-bottom-color: orange;
+}
+
+.cards:hover h3 {
+  transition: 1s ease;
+  background: -webkit-linear-gradient(orange, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*textos*/
+p {
+  font-size: 12px;
+  color: orange;
+}
+
+span {
+  font-size: 11px;
+  color: rgb(116, 114, 114);
+}
+
+h3 {
+  color: rgb(90, 90, 90);
+  text-align: left;
+}
+
+h4 {
+  margin-top: 6px;
+}
+
+.contenedor-txt p {
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  color: rgb(63, 63, 63);
+}
+
+/*estilizando las imagenes*/
+
+.contenedor-img {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+img {
+  max-width: 60px;
+  height: 60px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+  z-index: -1;
+  transition: 4s ease-in-out;
+}
+
+.cards:hover .contenedor-img .img .circle {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: -webkit-linear-gradient(black 50%, orange 50%);
+  transition: 4s ease-in-out;
+  animation: round 2s ease-in-out infinite;
+}
+.contenedor-txt {
+  margin-left: 10px;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Keyframes*/
+@keyframes round {
+  100% {
+    transform: rotate(360deg);
+    transition: ease-in-out 2s;
+  }
+}

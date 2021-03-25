@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url("fondo.jpg");
+  background-size: 60% 70%;
+  background-position: 100% 100%;
+  animation: fondo 6s infinite linear;
+  position: relative;
+}
+
+@keyframes fondo {
+  0% {
+    background-position: 70% 100%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div.logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: Roboto;
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: 80px;
+}
+
+h2 {
+  font-family: Roboto;
+  color: rgb(87, 87, 87);
+  font-weight: 500;
+  font-size: 40px;
+  position: relative;
+  margin-top: 10px;
+  transition: 2s ease;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: Roboto;
+  margin: 20px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: Roboto;
+  margin: 30px;
+  font-weight: 400;
+  color: rgb(163, 163, 163);
+}
+
+p {
+  font-weight: 200;
+  font-size: 30px;
+  margin: 40px 120px;
+  font-family: Roboto;
+  color: rgb(102, 102, 102);
+  text-align: justify;
+  width: 70%;
+}
+
+.line {
+  margin-left: 10px;
+  position: absolute;
+  height: 80%;
+  width: 4px;
+  background-color: black;
+  animation: intermitente 0.8s linear infinite;
+}
+.contenedorTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text1 {
+  width: 140px;
+}
+
+#transicion {
+  width: 300px;
+  height: 80%;
+  padding-left: 10px;
+  border-bottom: 6px solid rgb(255, 115, 0);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+@keyframes moveTop {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+@keyframes intermitente {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

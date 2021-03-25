@@ -1,0 +1,303 @@
+:root {
+  --move: -100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-attachment: black;
+  font-family: Roboto;
+}
+
+main.contenedor {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+svg {
+  transform: rotate(135deg);
+  width: 150px;
+}
+
+path {
+  fill: white;
+  stroke: black;
+  stroke-width: 20;
+  transition: 0.5s ease;
+}
+
+.contenedor-heart {
+  position: relative;
+  cursor: pointer;
+}
+
+.contenedor-heart:hover svg {
+  width: 155px;
+  transition: 1s ease;
+}
+
+.explossion {
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+}
+
+.uno {
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  background-color: red;
+  animation: 1s uno linear;
+}
+
+.dos {
+  border-radius: 50%;
+  position: absolute;
+  left: 70px;
+  top: 70px;
+  background-color: red;
+  animation: 0.8s dos linear;
+}
+
+.tres {
+  border-radius: 50%;
+  position: absolute;
+  right: 70px;
+  top: 70px;
+  background-color: red;
+  animation: 1s tres linear;
+}
+
+.cuatro {
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  background-color: red;
+  animation: 1.1s cuatro linear;
+}
+
+.cinco {
+  border-radius: 50%;
+  position: absolute;
+  right: 70px;
+  bottom: 70px;
+  background-color: red;
+  animation: 1.3s cinco linear;
+}
+
+.seis {
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  background-color: red;
+  animation: 0.5s seis linear;
+}
+
+.siete {
+  border-radius: 50%;
+  position: absolute;
+  left: 70px;
+  bottom: 70px;
+  background-color: red;
+  animation: 1.5s siete linear;
+}
+
+.ocho {
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  background-color: red;
+  animation: 0.9s ocho linear;
+}
+
+.nueve {
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  bottom: 45%;
+  background-color: red;
+  animation: 1.6s nueve linear;
+}
+
+.diez {
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  bottom: 45%;
+  background-color: red;
+  animation: 1s diez linear;
+}
+
+@keyframes uno {
+  0% {
+    left: 50px;
+    top: 50px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    left: -100px;
+    top: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes dos {
+  from {
+    left: 70px;
+    top: 70px;
+    opacity: 1;
+  }
+
+  to {
+    left: -80px;
+    top: -80px;
+    opacity: 0;
+  }
+}
+
+@keyframes tres {
+  from {
+    right: 70px;
+    top: 70px;
+    opacity: 1;
+  }
+
+  to {
+    right: -80px;
+    top: -80px;
+    opacity: 0;
+  }
+}
+
+@keyframes cuatro {
+  from {
+    right: 50px;
+    top: 50px;
+    opacity: 1;
+  }
+
+  to {
+    right: -100px;
+    top: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes cinco {
+  from {
+    right: 70px;
+    bottom: 70px;
+    opacity: 1;
+  }
+
+  to {
+    right: -80px;
+    bottom: -80px;
+    opacity: 0;
+  }
+}
+
+@keyframes seis {
+  from {
+    right: 50px;
+    bottom: 50px;
+    opacity: 1;
+  }
+
+  to {
+    right: -100px;
+    bottom: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes siete {
+  from {
+    left: 50px;
+    bottom: 50px;
+    opacity: 1;
+  }
+
+  to {
+    left: -100px;
+    bottom: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes ocho {
+  from {
+    left: 70px;
+    bottom: 70px;
+    opacity: 1;
+  }
+
+  to {
+    left: -80px;
+    bottom: -80px;
+    opacity: 9;
+  }
+}
+
+@keyframes nueve {
+  from {
+    left: 50px;
+    bottom: 45%;
+    opacity: 1;
+  }
+
+  to {
+    left: -120px;
+    bottom: 45%;
+    opacity: 0;
+  }
+}
+
+@keyframes diez {
+  from {
+    right: 50px;
+    bottom: 45%;
+    opacity: 1;
+  }
+
+  to {
+    right: -120px;
+    bottom: 45%;
+    opacity: 0;
+  }
+}

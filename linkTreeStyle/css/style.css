@@ -1,0 +1,109 @@
+body {/*background-color: rgb(214, 202, 202);*/
+    background-image: url('https://www.ismyt.com/portfolio/digital-card/img/BG-GRADIENT.png');
+    background-color: #222222ff;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   font-family: 'Quicksand'; 
+   
+}
+
+header {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+img {
+    width: 6rem;
+}
+
+
+div.img {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+h1 {
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 3px;
+}
+
+span {
+    font-size: 1.2rem;
+    color:#aa4400ff;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.932);
+    
+}
+
+p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.644);
+    border-bottom: 2px solid #aa4400ff;;
+    line-height: 2;
+    margin: 0 30px 30px 30px;
+    
+}
+
+.div-btn {
+    text-align: center;
+}
+.btn {
+    margin-top: 4.5rem;
+}
+button {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.425);
+    width: 16rem;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+.btn-ig {
+    background: rgb(121,47,67);
+    background: linear-gradient(83deg, rgba(121,47,67,0.2889418012640449) 20%, rgba(117,10,203,0.1625373068820225) 95%);
+    font-size: 1.2rem ;
+    border: none;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+
+.btn-fb {
+    background: rgb(47,83,121);
+background: linear-gradient(83deg, rgba(47,83,121,0.2889418012640449) 20%, rgba(10,79,203,0.1625373068820225) 95%);
+    font-size: 1.2rem ;
+    border: none;
+    background-color: transparent;
+    border-radius: 15px;
+
+} 
+
+.btn-ws {
+    background: rgb(47,121,96);
+background: linear-gradient(83deg, rgba(47,121,96,0.2889418012640449) 20%, rgba(46,108,103,0.1625373068820225) 95%);
+    font-size: 1.2rem ;
+    border: none;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.459);
+    margin-top: 3rem;
+}
+
+.download {
+    text-decoration: none;
+    color: #aa4400ff ;
+    font-size: bold;
+}
+
+
+ 

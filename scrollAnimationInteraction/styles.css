@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
+}
+
+.contenedor {
+  position: relative;
+  border: solid 6px #000;
+  border-radius: 30px;
+  width: 100px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.circulo {
+  position: absolute;
+  background-color: #000;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  animation: scroll 2.5s infinite ease;
+}
+
+@keyframes scroll {
+  0% {
+    top: 240px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 240px;
+  }
+}

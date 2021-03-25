@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+}
+.contenedor {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-10px);
+  transition: ease 0.1s;
+}
+
+H1 {
+  font-family: "Oswald";
+  font-size: 200px;
+}
+
+.contenedor h1:hover ~ span {
+  mix-blend-mode: difference;
+  width: 60px;
+  height: 60px;
+}

@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/*elementos globales*/
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+  font-weight: 200;
+  color: #4b4747;
+}
+
+li {
+  margin: 4px;
+  text-align: center;
+  color: #6d6c6a;
+}
+/*main class*/
+
+.contenedor-navegacion {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+
+.items {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0 7px 0 0;
+}
+
+.main {
+  text-align: center;
+  margin-top: 150px;
+}
+
+img {
+  max-width: 30%;
+}
+.menu {
+  max-width: 40%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.user {
+  width: 25px;
+  height: 12px;
+  border: solid 1px rgb(63, 76, 194);
+  border-radius: 50px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.contenedor-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-busqueda {
+  display: flex;
+  width: 500px;
+  height: 50px;
+  border-radius: 50px;
+  border: solid 0.2px #dfdcdc;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.btn-busqueda:hover {
+  transition: ease-out 0.5s;
+  box-shadow: 11px 10px 28px -14px rgba(0, 0, 0, 0.75);
+}
+
+.search-icon {
+  width: 20%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-circle {
+  border: solid 2px #949393;
+  height: 10px;
+  width: 10px;
+  margin-left: 4px;
+  margin-bottom: 9px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.search-line {
+  background-color: #949393;
+  width: 9px;
+  height: 3px;
+  border-radius: 4px;
+  position: absolute;
+  left: 17px;
+  top: 1px;
+  transform: rotate(35deg);
+}
+
+.input-busqueda {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  float: left;
+  left: 37px;
+  border: none;
+  background-color: transparent;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #6d6c6a;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.btn-search {
+  display: flex;
+}
+
+.btn-suerte,
+.btn-google {
+  width: 170px;
+  height: 40px;
+  margin: 30px 10px 20px 10px;
+  border-radius: 18px;
+  background-color: #6d6c6a04;
+  color: #6d6c6a;
+  cursor: pointer;
+}
+
+.btn-suerte {
+  border: 1px solid #4285f4;
+}
+
+.btn-google {
+  border: 1px solid #fbbc05;
+}
+
+.texto {
+  text-align: center;
+}
+
+.negrita {
+  font-weight: 700;
+  color: #4b4747;
+}
+
+footer {
+  top: 90%;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0dede80;
+}
+
+.list-footer {
+  display: flex;
+  list-style: none;
+  margin: 6px 30px;
+}

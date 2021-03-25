@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI CARDs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="card">
+        <div class="contenedor-imagen">
+          <div class="imagen">
+            <img id="imagen" src="AWESOME-UI-CARDS2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="contenedor-texto">
+          <div class="tamano">
+            <h3>Tamaño:</h3>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+          </div>
+
+          <div class="color">
+            <h3 class="h3-color">Color:</h3>
+            <span id="verde"></span>
+            <span id="amarillo"></span>
+            <span id="rojo"></span>
+            <button class="btn-comprar">COMPRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var btnAmarillo = document.querySelector("#amarillo");
+    var btnVerde = document.querySelector("#verde");
+    var btnRojo = document.querySelector("#rojo");
+
+    var comprar = document.querySelector(".btn-comprar");
+
+    btnAmarillo.addEventListener("click", () => {
+      document.getElementById("imagen").src = "AWESOME-UI-CARDSamarillo.png";
+    });
+
+    btnVerde.addEventListener("click", () => {
+      document.getElementById("imagen").src = "AWESOME-UI-CARDSGREEN.png";
+    });
+
+    btnRojo.addEventListener("click", () => {
+      document.getElementById("imagen").src = "AWESOME-UI-CARDS2.png";
+    });
+  </script>
+</html>

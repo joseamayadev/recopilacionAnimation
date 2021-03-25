@@ -1,0 +1,119 @@
+.txt-proyectos {
+  font-family: "Oswald";
+  font-size: 4rem;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.p-proyectos {
+  font-family: "Roboto";
+  font-size: 20px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.registrate label {
+  font-family: "Roboto";
+  font-size: 2.3rem;
+  color: #a5a3a3;
+}
+.input {
+  position: relative;
+}
+
+.input i {
+  position: absolute;
+  font-size: 30px;
+  right: 20%;
+  top: 50%;
+  color: white;
+}
+
+.registrate input {
+  margin-top: 20px;
+  width: 80%;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 2px #c4c0c0;
+  line-height: 40px;
+  font-family: "Roboto";
+  font-weight: 300;
+  position: relative;
+  color: #fff;
+  font-size: 25px;
+}
+
+.registrate input::placeholder {
+  color: #cac5c5;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.direccion p {
+  color: #cac5c5;
+  font-size: 25px;
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 10px;
+}
+
+.direccion a {
+  color: #cac5c5;
+  font-size: 25px;
+  font-family: "Oswald";
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 10px;
+  transition: 0.4s ease;
+}
+
+.direccion a:hover {
+  border-bottom: 6px solid #fff;
+  transition: 0.4s ease;
+}
+
+.nav a {
+  color: white;
+  font-size: 4rem;
+  text-align: left;
+  margin-left: 20%;
+  font-family: "Oswald";
+}
+
+.nav a span {
+  margin-left: 0%;
+  visibility: hidden;
+  transition: ease-in-out 0.1s;
+}
+
+.nav a:hover span {
+  margin-left: 3%;
+  visibility: visible;
+  transition: ease 0.1s;
+  margin-left: 3%;
+}
+
+.nav p {
+  color: #cac5c5;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 20%;
+  line-height: 10px;
+}
+
+.nav p a {
+  color: #cac5c5;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 700;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.cards1 h1 {
+  color: white;
+}

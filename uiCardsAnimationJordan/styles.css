@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-image {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(bg.jpg);
+  filter: blur(5px);
+  border: none;
+  padding: 0;
+}
+
+.contenedor {
+  background-color: rgb(221, 101, 21);
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  z-index: 10;
+}
+
+.contenedor::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s;
+}
+
+.contenedor:hover::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(300px at 80% -20%);
+}
+
+.contenedor::after {
+  content: "JORDAN";
+  font-family: "Anton";
+  position: absolute;
+  top: 45%;
+  font-size: 150px;
+  position: absolute;
+  color: #00000048;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.contenedor:hover::after {
+  transform: translateX(-30%);
+  transition: 1.5s;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  transition: 0.6s;
+}
+
+.contenedor-imagen {
+  position: absolute;
+}
+
+img {
+  position: absolute;
+  max-width: 300px;
+  left: 20px;
+  top: 80px;
+  transform: rotate(-35deg);
+  transition: 0.5s;
+}
+
+.contenedor:hover .card img {
+  left: 20px;
+  top: 40px;
+  transition: 0.5s;
+}
+
+.contenedor .contenedor-texto {
+  position: absolute;
+  text-align: center;
+  bottom: -10%;
+  width: 100%;
+  height: 30%;
+  transition: all 1s;
+}
+
+.contenedor .card:hover .contenedor-texto {
+  position: absolute;
+  text-align: center;
+  bottom: 20%;
+  width: 100%;
+  height: 20%;
+  transition: all 0.8s;
+}
+
+.contenedor .contenedor-texto .tamano {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.contenedor .contenedor-texto .tamano {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.contenedor .contenedor-texto .tamano button {
+  margin-left: 10px;
+  width: 30px;
+  background-color: transparent;
+  border: solid 1px white;
+  color: #ffffff;
+}
+
+.contenedor .contenedor-texto .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contenedor .contenedor-texto .colors span {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  background-color: #b557ff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.contenedor .contenedor-texto .colors span:nth-last-child(3) {
+  width: 25px;
+  height: 25px;
+  background-color: #4b9fff;
+  border-radius: 50%;
+}
+
+.contenedor .contenedor-texto .colors span:nth-last-child(2) {
+  width: 25px;
+  height: 25px;
+  background-color: #ff3347;
+  border-radius: 50%;
+}
+
+H4 {
+  color: rgb(224, 220, 220);
+}
+
+.comprar {
+  display: inline-block;
+  background-color: #fff;
+  margin: 20px;
+  width: 180px;
+  padding: 15px 0px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 6px 0px #fff;
+  color: rgb(7, 7, 7);
+  font-size: 20px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  transition: 0.9s;
+  opacity: 0;
+}
+
+.contenedor .card:hover button {
+  transition-delay: 1s;
+  transition: 1.2s;
+  opacity: 1;
+}

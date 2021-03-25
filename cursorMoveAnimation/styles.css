@@ -1,0 +1,104 @@
+:root {
+  --cSize: 34px;
+  --cSizeSmall: 10px;
+  --x: 120px;
+  --y: 120px;
+}
+
+html {
+  cursor: none;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+body,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  display: block;
+  background-color: rgba(231, 228, 228, 0.39);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  margin-left: 70px;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--cSize);
+  height: var(--cSize);
+  background-color: transparent;
+  border: 2px groove rgb(0, 0, 0);
+  border-radius: 0%;
+  transform: translate(
+    calc(var(--x) - var(--cSize) / 2),
+    calc(var(--y) - var(--cSize) / 2)
+  );
+  will-change: transform;
+  transform-style: preserve-3d;
+  z-index: 99;
+  pointer-events: none;
+  animation: cursor 1s ease-in-out infinite;
+}
+
+@keyframes cursor {
+  100% {
+    border: 1px solid rgb(49, 49, 49);
+  }
+}
+
+.cursor--large {
+  opacity: 0.5;
+  transition: transform 0.1s linear;
+}
+
+.cursor--small {
+  width: var(--cSizeSmall);
+  height: var(--cSizeSmall);
+  transform: translate(
+    calc(var(--x) - var(--cSizeSmall) / 2),
+    calc(var(--y) - var(--cSizeSmall) / 2)
+  );
+}
+
+a {
+  text-decoration: none;
+  color: rgb(3, 3, 3);
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid;
+  border-spacing: 8px;
+  border-bottom-color: orange;
+}
+
+.registro {
+  padding: 2px;
+  margin: 2%;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background: orange;
+}
+
+.registro:hover {
+  border: none;
+}

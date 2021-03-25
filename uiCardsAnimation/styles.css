@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+  content: "";
+  clip-path: circle(300px at 80% -20%);
+  content: "JORDAN";
+  transform: translateY(-30%);
+  z-index: 10000;
+  transition: 0.5s;
+
+transform: translateY(0%);
+transform: translate(-50%, -50%) rotate(-25deg);*/
+
+body {
+  background-color: rgb(49, 4, 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  max-width: 250px;
+}
+
+.contenedor {
+  background-color: red;
+  width: 250px;
+  height: 400px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.507);
+}
+
+.contenedor::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(216, 181, 181);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  clip-path: circle(150px at 80% 20%);
+  transition: 1s;
+}
+
+.contenedor:hover::before {
+  position: absolute;
+  z-index: 5;
+  content: "";
+  background-color: rgb(216, 181, 181);
+  width: 100%;
+  height: 100%;
+  clip-path: circle(300px at 80% -20%);
+  transition: 0.5s ease-in-out;
+}
+
+.contenedor::after {
+  position: absolute;
+  content: "JORDAN";
+  color: rgba(32, 11, 11, 0.507);
+  bottom: 25%;
+  font-size: 100px;
+  transition: 0.6s;
+  z-index: -1;
+}
+
+.contenedor:hover::after {
+  transform: translateX(-30%);
+  transition: 0.6s;
+}
+.card {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+.imagen {
+  position: absolute;
+  bottom: 30%;
+}
+
+.imagen img {
+  position: absolute;
+  transform: rotate(-35deg);
+  bottom: 0%;
+  left: 10px;
+  transition: 0.8s;
+}
+
+.card:hover .contenedor-imagen img {
+  position: absolute;
+  transform: rotate(-33deg);
+  transition: 0.6s;
+  bottom: 80px;
+}
+
+.contenedor-texto {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  bottom: -5%;
+  text-align: center;
+  transition: 0.6s;
+}
+
+.contenedor .card:hover .contenedor-texto {
+  bottom: 60px;
+  position: absolute;
+}
+
+h3 {
+  font-size: 15px;
+  display: inline-block;
+  color: white;
+  font-weight: 300;
+}
+
+.contenedor-texto .tamano button {
+  background-color: transparent;
+  font-size: 10px;
+  width: 15px;
+  padding: 2px;
+  box-sizing: border-box;
+  border: solid 1px white;
+  color: #ffffff;
+  font-family: "Quicksand";
+}
+
+.h3-color {
+  display: inline-block;
+}
+
+.color {
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.contenedor .card .contenedor-texto .color span {
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  display: inline-block;
+  background-color: yellow;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 2px;
+}
+
+.contenedor .card .contenedor-texto .color span:nth-last-child(4) {
+  background-color: rgb(53, 184, 103);
+}
+
+.contenedor .card .contenedor-texto .color span:nth-last-child(2) {
+  background-color: #ff4f53;
+}
+
+.contenedor .card .contenedor-texto .color span:nth-last-child(3) {
+  background-color: rgb(202, 170, 27);
+  box-shadow: 0px 2px 4px 0px rgba(32, 11, 11, 0.507);
+}
+
+.btn-comprar {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  opacity: 0;
+  transition: 0.6s;
+  left: 34%;
+  bottom: -90%;
+  color: rgba(66, 62, 62, 0.8);
+  background-color: rgb(247, 247, 247);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  font-family: "Quicksands";
+}
+
+.contenedor .card:hover .btn-comprar {
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}

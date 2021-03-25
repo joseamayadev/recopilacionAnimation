@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(228, 84, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor {
+  display: flex;
+  position: relative;
+}
+.ojo-container {
+  display: flex;
+  height: 400px;
+}
+
+.contenedor-ojo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.37);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30px;
+  background-color: white;
+}
+
+.iris {
+  position: absolute;
+  border-radius: 40%;
+  width: 70px;
+  height: 80px;
+  background-color: rgb(130, 133, 133);
+  top: 35%;
+  left: 32%;
+  z-index: 0;
+}
+
+.pestana {
+  position: absolute;
+  top: -35px;
+  background-color: #f5c292;
+  width: 200px;
+  height: 100px;
+  border-radius: 0px 0px 50% 50%;
+  display: block;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.37);
+  transition: 0.3s ease;
+}
+
+.pestana2 {
+  position: absolute;
+  background-color: #f5c292;
+  width: 200px;
+  height: 100px;
+  border-radius: 50% 50% 0% 0%;
+  bottom: -50px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+.contenedor-ojo:hover .pestana {
+  top: 0px;
+  border-radius: 0% 0% 0% 0%;
+}
+
+.contenedor-ojo:hover .pestana2 {
+  bottom: 0px;
+  border-radius: 5% 5% 0% 0%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.212);
+}
+
+.contenedor input:focus ~ .contenedor-ojo .pestana {
+  top: 0px;
+  border-radius: 0% 0% 0% 0%;
+}
+
+.contenedor input:focus ~ .contenedor-ojo .pestana2 {
+  bottom: 0px;
+  border-radius: 5% 5% 0% 0%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.212);
+}
+
+input {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  padding-left: 20px;
+  font-size: 20px;
+  bottom: -80px;
+  left: 45px;
+}
+
+input[type="password"] {
+  color: rgba(0, 0, 0, 0.363);
+}

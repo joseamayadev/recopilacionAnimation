@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(75, 111, 189);
+}
+
+img {
+  width: 400px;
+  animation: cohete 3s ease infinite;
+}
+
+@keyframes cohete {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.nubes {
+  top: -60px;
+  left: 20px;
+
+  animation: nubes 0.8s ease infinite;
+  position: absolute;
+}
+
+.nubes2 {
+  position: absolute;
+  right: 20px;
+  animation: nube2 0.6s ease infinite;
+}
+
+@keyframes nubes {
+  0% {
+    top: -30%;
+  }
+
+  50% {
+    top: 50%;
+  }
+
+  100% {
+    top: 60%;
+  }
+}
+
+@keyframes nube2 {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+span {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+
+  z-index: 1;
+}
+
+span:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  z-index: 2;
+  filter: blur(10px);
+  animation: explosion 1s ease infinite;
+}
+
+.contenedor {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*explosion*/
+@keyframes explosion {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: rgb(142, 150, 110);
+  }
+
+  100% {
+    background-color: rgb(71, 179, 103);
+  }
+}
