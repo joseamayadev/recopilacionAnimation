@@ -1,0 +1,16 @@
+{
+  "name": "scrollsuave",
+  "version": "1.0.0",
+  "description": "Efecto de scroll suave",
+  "main": "servidor.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jose Amaya",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "smooth-scrollbar": "^8.5.3"
+  }
+}
